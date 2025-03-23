@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favion/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favion/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favion/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="/index.css">
+  <!-- Leaflet CSS (for map styles) -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+<!-- Leaflet JS (for map functionality) -->
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+  
+  <title>IP Address Tracker</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div id="main">
+
+    <!-- Tracking and search section -->
+    <div id="addresstrack">
+      <h1 id="name">IP Address Tracker</h1>
+      <div id="inputblock">
+        <input id="input1" placeholder="Enter IP Address to Track">
+        <button id="click1"></button>
+      </div>
+    </div>
+    <div id="search">
+      <div class="block1" id="ip">
+        <h3 class="text">IP</h3>
+        <p class="text" id="iptext">Hello</p>
+      </div>
+      <hr>
+      <div class="block1" id="location">
+        <h3 class="text">Location</h3>
+        <p class="text" id="locationtext">Hello</p>
+      </div>
+      <hr>
+      <div class="block1" id="timezone">
+        <h3 class="text">Time Zone</h3>
+        <p class="text" id="timezonetext">Hello</p>
+      </div>
+      <hr>
+      <div class="block1" id="isp">
+        <h3 class="text" >ISP</h3>
+        <p class="text" id="isptext">Hello</p>
+      </div>
+    </div>
+    <div id="alert">
+      <div id="alertdiv">
+        <p id="alertmessage"></p>
+      <button id="close">Close</button>
+      </div>
+      
+    </div>
+    <!-- Map section -->
+    <div id="map">
+    </div>
+
+  </div>
+  <script src="/index.js"></script>
+</body>
+</html>
