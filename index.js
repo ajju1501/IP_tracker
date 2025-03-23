@@ -48,7 +48,7 @@ document.getElementById("input1").addEventListener("keydown", function (event) {
 async function fetchData(query) {
     if(!query){
         try {
-            console.log("userip")
+            console.log("useripaddress")
             let response = await fetch('https://ipinfo.io/json/');
         if (!response.ok) {
             throw new Error(`HTTP error! Status: ${response.status}`);
