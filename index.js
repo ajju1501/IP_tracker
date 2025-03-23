@@ -24,13 +24,13 @@ let alertele = document.querySelector("#alert");
 let closeele = document.querySelector("#close")
 
 
-let timeout; // Timer for debounce
+// let timeout; // Timer for debounce
 
-//Listen for user input and debounce API calls
-inputele.addEventListener("input", function () {
-    clearTimeout(timeout);
-    timeout = setTimeout(() => fetchData(this.value.trim()), 1000); // Wait 1 sec
-});
+// //Listen for user input and debounce API calls
+// inputele.addEventListener("input", function () {
+//     clearTimeout(timeout);
+//     timeout = setTimeout(() => fetchData(this.value.trim()), 1000); // Wait 1 sec
+// });
 
 document.getElementById("click1").addEventListener("click", function (event) {
     let userInput = this.value.trim();
