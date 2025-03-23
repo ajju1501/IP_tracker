@@ -83,7 +83,7 @@ async function fetchData(query) {
             console.log(data);
     
             ipele.innerHTML = data.ip;
-            locationele.innerHTML = data.country;
+            locationele.innerHTML = data.city +", "+ data.region+", "+data.country;
             timezoneele.innerHTML = data.timezone;
             ispele.innerHTML = data.org;
              //Update Map
